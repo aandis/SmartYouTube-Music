@@ -11,7 +11,7 @@ chrome.webRequest.onSendHeaders.addListener(function(callback) {
         getVideosDuration(currVideoId, function(durationData) {
             var duration = convertISO8601(durationData.items[0].contentDetails.duration);
             if (duration > LONG_VIDEO_DURATION) {
-                if (params.hasOwnProperty("autonav") && params.autonav == "1" && params.hasOwnProperty("autoplay") && params.autoplay == "1") {
+                if (params.hasOwnProperty("autonav") && params.autonav == "1" && params.hasOwnProperty("autoplay") && params.autoplay == "1" && typeof currRelated !== 'undefined') {
                     chrome.tabs.update(callback.tabId, {
                         url: "https://www.youtube.com/watch?v=" + currRelated
                     });
@@ -92,6 +92,7 @@ function filterRelated(data) {
             var duration = convertISO8601(results[i].contentDetails.duration);
             if (!(relatedVideoId in watchedIds) && duration < LONG_VIDEO_DURATION) {
                 currRelated = relatedVideoId;
+                console.log(currRelated);
                 break;
             }
         };
