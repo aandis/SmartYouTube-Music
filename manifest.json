@@ -5,7 +5,7 @@
       "scripts": ["js/eventpage.js", "js/jquery-2.1.4.min.js"]
     },
 
-  "name": "Skip Long YouTube Videos",
+  "name": "SmartYouTube Music",
   "description": "Skip long youtube videos while listening with autoplay on YouTube",
   "version": "1.0",
 

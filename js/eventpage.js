@@ -92,7 +92,6 @@ function filterRelated(data) {
             var duration = convertISO8601(results[i].contentDetails.duration);
             if (!(relatedVideoId in watchedIds) && duration < LONG_VIDEO_DURATION) {
                 currRelated = relatedVideoId;
-                console.log(currRelated);
                 break;
             }
         };
