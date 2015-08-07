@@ -7,7 +7,7 @@
     ]
   },
   "name": "SmartYouTube Music",
-  "description": "Intelligently picks videos for you and skips annoying long videos when you listen music on YouTube with autoplay to maximize your music experience.",
+  "description": "Intelligently picks videos and skips annoying long videos when you listen music on YouTube with autoplay.",
   "version": "1.0",
   "icons": {
     "16": "icons/smart-youtube16.png",
