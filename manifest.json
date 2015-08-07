@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "background": {
+      "scripts": ["js/eventpage.js", "js/jquery-2.1.4.min.js"]
+    },
+
+  "name": "Skip Long YouTube Videos",
+  "description": "Skip long youtube videos while listening with autoplay on YouTube",
+  "version": "1.0",
+
+  "permissions": [
+   "webRequest",
+    "*://*.youtube.com/*",
+    "tabs",
+    "https://ajax.googleapis.com/"
+  ]
+}
